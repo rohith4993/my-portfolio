@@ -67,7 +67,13 @@ export default function Navbar({ activeSection, route, navigate }: NavbarProps) 
           </button>
         )}
 
-        <a className="nav-cta" href="#" onClick={(e) => e.preventDefault()}>
+        <a
+          className="nav-cta"
+          href={`${import.meta.env.BASE_URL}Rohith_Resume.pdf`}
+          download="Rohith_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Resume
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M7 17L17 7M9 7h8v8"/>
